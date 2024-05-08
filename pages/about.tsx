@@ -3,8 +3,8 @@ export default function about() {
 
     return(
         <Layout>
-            <main className="home">
-                <div className="home__content">
+            <main className="layout">
+                <div className="layout__content">
                     <h2>about page Sidebar Example</h2>
                     <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
                     <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
