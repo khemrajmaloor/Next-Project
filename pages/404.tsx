@@ -3,10 +3,10 @@ export default function Custom404() {
   return (
 
     <Layout> 
-      <main className="layout">
-        <div className="layout__content">
-          <h1 style = {{display:'grid', placeContent:'center'}}> Page Not Found</h1>
-          <a href="/">Go to home  </a>
+      <main className="layout" style = {{display:'grid', placeContent:'center'}}>
+        <div className="layout__content" >
+          <h1> Page Not Found</h1>
+          <a href="/" style = {{textDecoration:'underline' , color:'blue'}}>Go to home  </a>
         </div>
       </main>
     </Layout> 
