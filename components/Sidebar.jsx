@@ -8,6 +8,7 @@ export default function Sidebar(){
                         <a class="sidebar__content__items__active" href="/">Home</a>
                         <a href="/about">About</a>
                         <a href="/service">Service</a>
+                        <a href="/blog">Blog</a>
                     </ul>
                 </div>
             </div>
