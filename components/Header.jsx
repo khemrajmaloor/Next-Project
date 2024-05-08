@@ -7,8 +7,6 @@ export default function Header() {
         <header className="header"> 
             <div className="header__container">
                 <div className="header__logo">
-                    {/* Use the Image component to render the image */}
-                    {/* <Image src={Logo} alt="Logo" className="img__logo" /> */}
                     <a href="/">
                         <h2>Pixia</h2>    
                     </a>
