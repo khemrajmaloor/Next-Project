@@ -8,7 +8,10 @@ export default function Header() {
             <div className="header__container">
                 <div className="header__logo">
                     {/* Use the Image component to render the image */}
-                    <Image src={Logo} alt="Logo" className="img__logo" />
+                    {/* <Image src={Logo} alt="Logo" className="img__logo" /> */}
+                    <a href="/">
+                        <h2>Pixia</h2>    
+                    </a>
                 </div>
                 <div className="header__content">
                     <form action="/action_page.php">
