@@ -1,0 +1,9 @@
+.blog{
+  &__content {
+    &__items{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 23px;
+    }
+  }
+}
