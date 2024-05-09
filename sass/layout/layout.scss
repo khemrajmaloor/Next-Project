@@ -18,15 +18,16 @@ body {
 .header {
     &__container{
         z-index: 99;
-        // background-color:#F40C43;
-        background-color:  #000;;
-        color: #FFF;
+        background-color: #000;
+        color: #fff;
         position: fixed;
         height: auto;
         width: 100%;
         padding: 18px;
         justify-content: space-between;
         display: flex;
+        box-shadow: 2px 2px 0px 0px #FE889F;
+        
     }
     &__logo h2 {
         font-size: 30px;
