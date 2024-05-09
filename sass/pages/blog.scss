@@ -1,9 +1,25 @@
 .blog{
+  &__heading {
+    text-align: center;
+    background: #ffff008c;
+    color: #000;
+    font-family: cursive;
+  }
   &__content {
     &__items{
       display: flex;
       justify-content: space-between;
       margin-top: 23px;
+      padding: 10px;
+      box-shadow: 0px 0px 2px 0px #454d4e;
+      & .blog__image{
+        width: 430px;
+        height: 220px;
+      }
+      &__title{
+        width: 60%;
+      }
     }
+   
   }
 }
