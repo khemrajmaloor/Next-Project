@@ -1,6 +1,6 @@
 import { AiOutlineSearch } from "react-icons/ai"; // Import the search icon
 import Image from "next/image";
-import Logo from "../public/images/Logo.png";
+
 
 export default function Header() {
     return (
