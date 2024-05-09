@@ -1,149 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap');
-//Property variables
-$margin-top:41px;
+    @import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap');
+    //Property variables
+    $margin-top:41px;
 
-body {
-    margin: 0;
-    font-family: "Lato", sans-serif;
-    // font-family: "Comic Sans";
-    background: #000000ed;
-    color: #fff;
-}
-.layout{
-    &__content{
-        margin-left: 200px;
-        padding: 100px 16px;
-        height: 1000px;
-    }
-}
-
-.header {
-    &__container{
-        z-index: 99;
-        background-color: #000;
+    body {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+        // font-family: "Comic Sans";
+        background: #000000ed;
         color: #fff;
-        position: fixed;
-        height: auto;
-        width: 100%;
-        padding: 18px;
-        justify-content: space-between;
-        display: flex;
-        box-shadow: 2px 2px 0px 0px #FE889F;
-        
-    }
-    &__logo h2 {
-        font-size: 30px;
-        font-weight: 700;
-        font-family: "Briem Hand", cursive;
-    }
-    &__content {
-        float: right;
-        display: flex;
-        &__btn {
-        float: right;
-        padding: 10.5px 10px;
-        margin-top: 8px;
-        margin-right: 16px;
-        background: #fe889f;
-        font-size: 17px;
-        border: none;
-        cursor: pointer;
+        h1, h2, h3, h4, h5, h6 {
+            font-size: x-large !important;
+            font-weight: 600 !important;
         }
-        input[type=text] {
-        padding: 6px;
-        margin-top: 8px;
-        font-size: 17px;
-        border: none;
-        }
-        
-        button:hover {
-        background: #ccc;
-        }
-
     }
-}
-
-.sidebar {
-    
-    padding: 96px 0px 0px 0px;
-    width: 200px;
-    background-color: #000;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    &__content__items__active {
-        background-color: #fe889f;
-        color: #fff ;
-    }
-    a {
-        display: block;
-        padding: 16px;
-        color: #FFF;
-        text-decoration: none;
-    }
-    a:hover:not(.active) {
-        background-color: #555;
-        color: white;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .layout__content {
-        margin-left: 0;
-    }
-    
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        & a {
-            float: none;
-            text-align: center;
-        }
+    .layout{
         &__content{
-            &__items{
-                margin-top:$margin-top;
-            }
+            margin-left: 200px;
+            padding: 100px 16px;
+            height: 1000px;
         }
     }
-    
-}
-@media screen and (min-width: 320px) and (max-width: 768px) {
-    .header{
-        &__container {
-            padding: 12px;
+
+    .header {
+        &__container{
+            z-index: 99;
+            background-color: #000;
+            color: #fff;
+            position: fixed;
+            height: auto;
+            width: 100%;
+            padding: 18px;
+            justify-content: space-between;
+            display: flex;
+            box-shadow: 2px 2px 0px 0px #FE889F;
+            
         }
-        &__content__btn {
+        &__logo h2 {
+            font-size: 30px;
+            font-weight: 700;
+            font-family: "Briem Hand", cursive;
+        }
+        &__content {
+            float: right;
+            display: flex;
+            &__btn {
             float: right;
             padding: 10.5px 10px;
             margin-top: 8px;
-            margin-right: 0 !important;
+            margin-right: 16px;
             background: #fe889f;
             font-size: 17px;
             border: none;
             cursor: pointer;
+            }
+            input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+            }
+            
+            button:hover {
+            background: #ccc;
+            }
+
         }
     }
-    
+
     .sidebar {
-        padding-top: 30px;
-        &__content{
-            &__items{
-                margin-top:$margin-top;
+        
+        padding: 96px 0px 0px 0px;
+        width: 200px;
+        background-color: #000;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+        &__content__items__active {
+            background-color: #fe889f;
+            color: #fff ;
+        }
+        a {
+            display: block;
+            padding: 16px;
+            color: #FFF;
+            text-decoration: none;
+        }
+        a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .layout__content {
+            margin-left: 0;
+        }
+        
+        .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+            & a {
+                float: none;
+                text-align: center;
+            }
+            &__content{
+                &__items{
+                    margin-top:$margin-top;
+                }
+            }
+        }
+        
+    }
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+        .header{
+            &__container {
+                padding: 12px;
+            }
+            &__content__btn {
+                float: right;
+                padding: 10.5px 10px;
+                margin-top: 8px;
+                margin-right: 0 !important;
+                background: #fe889f;
+                font-size: 17px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        
+        .sidebar {
+            padding-top: 30px;
+            &__content{
+                &__items{
+                    margin-top:$margin-top;
+                }
             }
         }
     }
-}
-@media screen and (max-width: 600px) {
-    .header{
+    @media screen and (max-width: 600px) {
+        .header{
 
-        &__content {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        
-        &__btn {
-            margin-top: 16px;
+            &__content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            &__btn {
+                margin-top: 16px;
+            }
         }
     }
-}
